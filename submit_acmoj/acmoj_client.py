@@ -140,6 +140,7 @@ def main():
             print(f"Error: Failed to read code file: {e}")
             exit(1)
 
+        # Submit source text via API
         result = client.submit_code(args.problem_id, args.language, code_text)
 
     elif args.command == "status":
